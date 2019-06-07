@@ -1,0 +1,18 @@
+.btn{
+    border-radius: 0;
+    padding: 1rem 2rem;
+    @media (max-width: 767px){
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+.btn-primary{
+    background-color: #eee;
+    border-color: #eee;
+    color: #212121;
+    &:hover, &:active{
+        color: #eee !important;
+        background-color: transparent !important;
+        border-color: #eee !important;
+    }
+}

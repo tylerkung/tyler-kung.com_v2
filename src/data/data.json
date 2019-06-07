@@ -1,0 +1,67 @@
+{
+	"home": {
+		"meta-title": "FRIENDS",
+		"meta-description": "FRIENDS HAS ALWAYS BEEN ABOUT BRINGING PEOPLE TOGETHER ORGANICALLY THROUGH VARIOUS GENRES OF MUSIC AND EVENTS. NO BARRIERS x NO JUDGEMENT",
+		"meta-image": "/img/friends-og-image.jpg"
+	},
+	"about": {
+		"meta-title": "about page",
+		"meta-description": "description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi qui cum vitae suscipit voluptatem, alias ea facilis quae magnam ut rerum dolorum. Sint deserunt esse, debitis blanditiis modi ipsam laudantium?",
+		"title": "1-title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptate nulla mollitia quis, aspernatur eum neque, quasi! Omnis corporis modi quia, obcaecati, aut atque! Odio facilis quisquam maxime tempore iure!"
+	},
+   "brand":{
+	   	"logo": "/img/friends-white.png"
+   },
+   "navigation":[
+      {
+		  "title":"Home",
+          "link":"/"
+      },
+	  {
+         "title":"Events",
+         "link":"/events"
+	  },
+      {
+		  "title":"About",
+          "link":"/about"
+      },
+	  {
+         "title":"Media",
+         "link":"/media"
+	  },
+	  {
+         "title":"Contact",
+         "link":"/contact"
+	  }
+  ],
+  "footer-navigation":[
+	 {
+		"title":"Contact",
+		"link":"/contact"
+	 },
+	 {
+		"socials":[
+			{
+				"title": "Twitter",
+				"icon": "fa-twitter",
+				"link": "https://twitter.com/wooitsmike"
+			},
+			{
+				"title": "Facebook",
+				"icon": "fa-facebook",
+				"link": "https://www.facebook.com/friendssfevents/"
+			},
+			{
+				"title": "Instagram",
+				"icon": "fa-instagram",
+				"link": "https://www.instagram.com/friendssf_/"
+			},
+			{
+				"title": "Soundcloud",
+				"icon": "fa-soundcloud",
+				"link": "https://soundcloud.com/friends_sf"
+			}
+		]
+	}
+  ]
+}

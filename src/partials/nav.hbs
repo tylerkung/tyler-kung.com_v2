@@ -1,0 +1,49 @@
+<div class="nav">
+	<a class="logo-link" href="/">
+		<div class="logo">
+			<img src="{{brand.logo}}">
+		</div>
+	</a>
+	<div class="menu" v-bind:class="{'active': menuOpen}">
+		<div class="menu-button" v-on:click="menuOpen = !menuOpen">
+			<div class="bar"></div>
+			<div class="bar"></div>
+		</div>
+	</div>
+	<div class="menu-overlay" v-bind:class="{'active': menuOpen}">
+		<div class="menu-wrapper">
+			<ul>
+				{{#each navigation}}
+					<li class="menu-item m-level-1">
+						<a href="{{ link }}" class="">
+							<h4>{{ title }}</h4>
+						</a>
+			        {{#if subnav}}
+			                <ul class="menu-item m-level-2">
+			                    {{#each subnav}}
+			                       <li>
+									   <a href="{{ link }}" class="">
+										   {{ title }}
+									   </a>
+								   </li>
+			                    {{/each}}
+			                </ul>
+			            {{/if}}
+			        </li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+	<div class="socials">
+		<div class="site-title">FRIENDS</div>
+		<div class="social-icons">
+			{{#each footer-navigation}}
+				{{#if socials}}
+						{{#each socials}}
+							<span><a href="{{link}}"><i class="fab {{icon}}"></i></a></span>
+						{{/each}}
+				{{/if}}
+			{{/each}}
+		</div>
+	</div>
+</div>
