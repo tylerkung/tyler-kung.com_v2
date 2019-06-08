@@ -15,6 +15,8 @@ const babel = require('gulp-babel');
 const handlebars = require('gulp-compile-handlebars');
 const fs = require('fs');
 const rename = require('gulp-rename');
+// const turbolinks = require('turbolinks');
+// turbolinks.start();
 
 
 gulp.task('styles', function() {

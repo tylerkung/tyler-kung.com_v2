@@ -1,7 +1,7 @@
 {
 	"home": {
-		"meta-title": "FRIENDS",
-		"meta-description": "FRIENDS HAS ALWAYS BEEN ABOUT BRINGING PEOPLE TOGETHER ORGANICALLY THROUGH VARIOUS GENRES OF MUSIC AND EVENTS. NO BARRIERS x NO JUDGEMENT",
+		"meta-title": "Tyler Kung",
+		"meta-description": "Hi! I build websites.",
 		"meta-image": "/img/friends-og-image.jpg"
 	},
 	"about": {
@@ -10,24 +10,20 @@
 		"title": "1-title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptate nulla mollitia quis, aspernatur eum neque, quasi! Omnis corporis modi quia, obcaecati, aut atque! Odio facilis quisquam maxime tempore iure!"
 	},
    "brand":{
-	   	"logo": "/img/friends-white.png"
+	   	"logo": ""
    },
    "navigation":[
       {
 		  "title":"Home",
           "link":"/"
       },
-	  {
-         "title":"Events",
-         "link":"/events"
-	  },
       {
 		  "title":"About",
           "link":"/about"
       },
 	  {
-         "title":"Media",
-         "link":"/media"
+		  "title": "Work",
+		  "link":"/work"
 	  },
 	  {
          "title":"Contact",
@@ -44,22 +40,22 @@
 			{
 				"title": "Twitter",
 				"icon": "fa-twitter",
-				"link": "https://twitter.com/wooitsmike"
+				"link": "https://twitter.com/tylerkung"
 			},
 			{
 				"title": "Facebook",
 				"icon": "fa-facebook",
-				"link": "https://www.facebook.com/friendssfevents/"
+				"link": ""
 			},
 			{
 				"title": "Instagram",
 				"icon": "fa-instagram",
-				"link": "https://www.instagram.com/friendssf_/"
+				"link": ""
 			},
 			{
 				"title": "Soundcloud",
 				"icon": "fa-soundcloud",
-				"link": "https://soundcloud.com/friends_sf"
+				"link": ""
 			}
 		]
 	}

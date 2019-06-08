@@ -6,12 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" />
     <meta data-react-helmet="true" name="description" content="">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="FRIENDS">
+    <meta property="og:title" content="Tyler Kung">
     <meta property="og:image" content="/img/friends-og-image.jpg">
     <meta property="og:url" content="">
-    <meta name="description" content="FRIENDS HAS ALWAYS BEEN ABOUT BRINGING PEOPLE TOGETHER ORGANICALLY THROUGH VARIOUS GENRES OF MUSIC AND EVENTS. NO BARRIERS x NO JUDGEMENT" />
+    <meta name="description" content="Hi! I build websites." />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>FRIENDS</title>
+	<title>Tyler Kung</title>
 	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
 	<!-- <link rel="stylesheet" type="text/css" href="/styles/all.css" /> -->
 	
@@ -34,27 +34,73 @@
 </head>
 
 <body class="home-template">
-
-<footer>
-    <div class="footer">
-        <div class="row">
-            <div class="col-sm-6">
-                <h3>FRIENDS</h3>
-                <ul class="footer-nav">
-						<li><a href="/contact">Contact</a></li>
-						<li><a href=""></a></li>
-							<li class="socials">
-									<span><a href="https://twitter.com/wooitsmike"><i class="fab fa-twitter"></i></a></span>
-									<span><a href="https://www.facebook.com/friendssfevents/"><i class="fab fa-facebook"></i></a></span>
-									<span><a href="https://www.instagram.com/friendssf_/"><i class="fab fa-instagram"></i></a></span>
-									<span><a href="https://soundcloud.com/friends_sf"><i class="fab fa-soundcloud"></i></a></span>
-							</li>
-                    <li>Footer 2019</li>
-                </ul>
-            </div>
+    <div class="main">
+        <div class="nav">
+        	<a class="logo-link" href="/">
+        		<div class="logo">
+        			<img src="">
+        		</div>
+        	</a>
+        	<div class="menu" v-bind:class="{'active': menuOpen}">
+        		<div class="menu-button" v-on:click="menuOpen = !menuOpen">
+        			<div class="bar"></div>
+        			<div class="bar"></div>
+        		</div>
+        	</div>
+        	<div class="menu-overlay" v-bind:class="{'active': menuOpen}">
+        		<div class="menu-wrapper">
+        			<ul>
+        					<li class="menu-item m-level-1">
+        						<a href="/" class="">
+        							<h4>Home</h4>
+        						</a>
+        			        </li>
+        					<li class="menu-item m-level-1">
+        						<a href="/about" class="">
+        							<h4>About</h4>
+        						</a>
+        			        </li>
+        					<li class="menu-item m-level-1">
+        						<a href="/work" class="">
+        							<h4>Work</h4>
+        						</a>
+        			        </li>
+        					<li class="menu-item m-level-1">
+        						<a href="/contact" class="">
+        							<h4>Contact</h4>
+        						</a>
+        			        </li>
+        			</ul>
+        		</div>
+        	</div>
+        </div>
+        <div class="banner">
+            <img src="/img/dark-bg.jpg">
+        </div>
+        <div class="main-image">
+            <img src="/img/splash.jpg">
+        </div>
+        <div class="sidebar">
+            <h3>Sidebar</h3>
+        </div>
+        <div class="sidebar-image">
+            <img src="/img/splash-2.jpg">
+        </div>
+        <div class="main-content">
+            <h1>Main Content</h1>
+            <h2>Lorem ipsum dolor sit amet</h2>
+        </div>
+        <div class="secondary-content">
+            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="cta">
+            <a href="#">Explore More</a>
+        </div>
+        <div class="gallery">
+            <img src="/img/splash-4.jpg">
+        </div>
+        <div class="controls">
         </div>
     </div>
-</footer>
-<script src="/scripts/all.js"></script>
 </body>
 </html>

@@ -2,19 +2,19 @@
     <div class="footer">
         <div class="row">
             <div class="col-sm-6">
-                <h3>FRIENDS</h3>
                 <ul class="footer-nav">
 					{{#each footer-navigation}}
-						<li><a href="{{ link }}">{{ title }}</a></li>
 						{{#if socials}}
 							<li class="socials">
 								{{#each socials}}
 									<span><a href="{{link}}"><i class="fab {{icon}}"></i></a></span>
 								{{/each}}
 							</li>
+                        {{else}}
+                        <li><a href="{{ link }}">{{ title }}</a></li>
 						{{/if}}
+
 					{{/each}}
-                    <li>Footer 2019</li>
                 </ul>
             </div>
         </div>
