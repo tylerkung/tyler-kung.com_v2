@@ -11,6 +11,7 @@
       <meta property="og:url" content="">
       <meta name="description" content="Hi! I build websites." />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="turbolinks-root" content="/">
   	<title>Tyler Kung</title>
   	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
   	<!-- <link rel="stylesheet" type="text/css" href="/styles/all.css" /> -->
@@ -27,10 +28,11 @@
   	<script src="/includes/bootstrap.min.js"></script>
   	<script src="/includes/scrollmagic.min.js"></script>
   	<script src="/includes/debug.addIndicators.min.js"></script>
-  	<!-- <script src="js/turbolinks.js"></script> -->
+  	<!-- <script src="/includes/turbolinks.js"></script> -->
+  	<script src="https://unpkg.com/swup@latest/dist/swup.js"></script>
+  	<script src="/scripts/all.js"></script>
   	
-  	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Mono" rel="stylesheet">
-  	<link rel="shortcut icon" href="/img/friends.png" type="image/x-icon">
+  	<link rel="shortcut icon" href="" type="image/x-icon">
   </head>
   <body class="">
       <div class="nav">
@@ -48,6 +50,7 @@
       	<div class="menu-overlay" v-bind:class="{'active': menuOpen}">
       		<div class="menu-wrapper">
       			<ul>
+      				<li class="menu-item m-level-1">
       					<li class="menu-item m-level-1">
       						<a href="/" class="">
       							<h4>Home</h4>
@@ -73,70 +76,13 @@
       	</div>
       </div>
         <div class="main-header">
-            <div class="header-bg" data-parallax="scroll" data-image-src="/img/kaytranada.jpg" data-speed="0.8">
-            </div>
             <div class="header-text">
                 <h1>About</h1>
             </div>
         </div>
         <div class="main-content">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2>Friends</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="banner-image">
-                            <img src="/img/mike-4.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="row flex">
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="centered-image white">
-                            <img src="/img/wuzhen-1.jpg">
-                            <div class="img-caption animate">
-                                <h3>Image Caption</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="shadow-image white">
-                            <img src="/img/wuzhen-2.jpg">
-                            <div class="img-caption animate">
-                                <h3>Image Caption</h3>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="centered-image black">
-                            <img src="/img/wuzhen-3.jpg">
-                            <div class="img-caption animate">
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="shadow-image white">
-                            <img src="/img/kaytranada-2.jpg">
-                            <div class="img-caption animate">
-                                <h3>Image Caption</h3>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
      <footer>
@@ -158,6 +104,5 @@
              </div>
          </div>
      </footer>
-     <script src="/scripts/all.js"></script>
   </body>
 </html>

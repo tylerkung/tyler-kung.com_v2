@@ -11,6 +11,7 @@
       <meta property="og:url" content="">
       <meta name="description" content="Hi! I build websites." />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="turbolinks-root" content="/">
   	<title>Tyler Kung</title>
   	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
   	<!-- <link rel="stylesheet" type="text/css" href="/styles/all.css" /> -->
@@ -27,10 +28,11 @@
   	<script src="/includes/bootstrap.min.js"></script>
   	<script src="/includes/scrollmagic.min.js"></script>
   	<script src="/includes/debug.addIndicators.min.js"></script>
-  	<!-- <script src="js/turbolinks.js"></script> -->
+  	<!-- <script src="/includes/turbolinks.js"></script> -->
+  	<script src="https://unpkg.com/swup@latest/dist/swup.js"></script>
+  	<script src="/scripts/all.js"></script>
   	
-  	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Mono" rel="stylesheet">
-  	<link rel="shortcut icon" href="/img/friends.png" type="image/x-icon">
+  	<link rel="shortcut icon" href="" type="image/x-icon">
   </head>
   <body class="">
       <div class="nav">
@@ -48,6 +50,7 @@
       	<div class="menu-overlay" v-bind:class="{'active': menuOpen}">
       		<div class="menu-wrapper">
       			<ul>
+      				<li class="menu-item m-level-1">
       					<li class="menu-item m-level-1">
       						<a href="/" class="">
       							<h4>Home</h4>
@@ -98,6 +101,5 @@
              </div>
          </div>
      </footer>
-     <script src="/scripts/all.js"></script>
   </body>
 </html>
