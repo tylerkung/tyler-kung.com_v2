@@ -1,0 +1,93 @@
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .logo-link{
+        pointer-events: all;
+        width: 8.3333%;
+        z-index: 9;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .logo{
+        font-family: "Kanit";
+        color: #fff;
+        font-size: 3rem;
+        padding: 1rem;
+        line-height: 1;
+        text-align: center;
+        mix-blend-mode: difference;
+    }
+    .menu{
+        width: 8.3333%;
+        z-index: 9;
+        .menu-button{
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 1rem;
+            cursor: pointer;
+        }
+        .bar{
+            width: 55px;
+            display: block;
+            background-color: #fff;
+            height: 5px;
+            margin-bottom: 4px;
+            &:not(:first-of-type){
+                width: 45px;
+            }
+        }
+    }
+}
+
+.menu-overlay{
+    width: 100%;
+    position: absolute;
+    transform: translateY(-100%);
+    background-color:  rgba(0,0,0,0.9);
+    transition: transform cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    padding: 2rem 16.666%;
+    display: flex;
+    align-items: center;
+    &.active{
+        transform: translateY(0%);
+        .menu-wrapper{
+            ul{
+                li{
+                    animation: fadeInUp 0.8s forwards;
+                }
+            }
+        }
+    }
+    .menu-wrapper{
+        width: 100%;
+        ul{
+            display: flex;
+            margin-bottom: 0;
+            padding: 0;
+            li{
+                list-style: none;
+                margin: 0 4rem;
+                opacity: 0;
+                @for $i from 1 through 10{
+                    &:nth-child(#{$i}){
+                        animation-delay: 0.0s + (0.1s * $i);
+                        -webkit-animation-delay: 0.0s + (0.1s * $i);
+                    }
+                }
+                &:first-of-type{
+                    margin-left: 0;
+                }
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
