@@ -18,7 +18,7 @@
     }
     .logo{
         font-family: "Kanit";
-        color: #fff;
+        color: #030209;
         font-size: 3rem;
         padding: 1rem;
         line-height: 1;
@@ -34,17 +34,28 @@
             flex-direction: column;
             align-items: flex-end;
             justify-content: center;
-            padding: 1rem;
+            padding: 1.7rem;
             cursor: pointer;
         }
         .bar{
-            width: 55px;
+            width: 45px;
             display: block;
-            background-color: #fff;
+            background-color: #030209;
             height: 4px;
             margin-bottom: 4px;
+            transition: background-color 0.2s ease;
             &:not(:first-of-type){
-                width: 45px;
+                width: 35px;
+            }
+        }
+    }
+    &.active{
+        .logo{
+            color: #fff;
+        }
+        .menu{
+            .bar{
+                background-color: #fff;
             }
         }
     }
@@ -82,6 +93,10 @@
                 animation-delay: 1s;
                 a{
                     transition: color 0.2s ease;
+                    h4{
+                        margin-bottom: 0;
+                        font-size: 1.2em;
+                    }
                 }
                 @for $i from 1 through 10{
                     &:nth-child(#{$i}){

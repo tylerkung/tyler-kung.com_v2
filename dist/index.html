@@ -38,13 +38,13 @@
 </head>
 
 <body>
-    <div class="nav">
+    <div class="nav" v-bind:class="{'active': menuOpen}">
     	<a class="logo-link" href="/">
     		<div class="logo">
     			tk
     		</div>
     	</a>
-    	<div class="menu" v-bind:class="{'active': menuOpen}">
+    	<div class="menu">
     		<div class="menu-button" v-on:click="menuOpen = !menuOpen">
     			<div class="bar"></div>
     			<div class="bar"></div>
@@ -81,7 +81,7 @@
         <div class="main home-template">
             <div class="main-area">
                 <div class="banner">
-                    <img src="/img/dark-bg.jpg">
+                    <img src="/img/tyler-4.jpg">
                 </div>
                 <div class="main-image">
                     <img src="/img/tyler-1.jpg">
@@ -95,6 +95,7 @@
                 <div class="main-content">
                     <h1>I'm Tyler Kung</h1>
                     <h2>I build websites</h2>
+                    <div class="scroller"></div>
                 </div>
                 <div class="secondary-content">
                     <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -110,6 +111,65 @@
             </div>
         </div>
         <div class="content">
+            <div class="row">
+                <div class="col-sm-3 sidebar-area">
+                    <h5 class="rotated">Recent Projects</h5>
+                </div>
+                <div class="col-sm-9 content-area">
+                    <div class="list">
+                        <div v-for="(item, index) in gallery" class="list-item">
+                            <div class="l-item-img">
+                                <img :src="item['image-1']"/>
+                            </div>
+                            <div class="l-item-content">
+                                <div class="l-item-col">
+                                    <h2>${item['title']}</h2>
+                                    <h3>${item['headline']}</h3>
+                                    <div class="tags-container" v-if="item['tags']">
+                                        <div class="tags">
+                                            ${item['tags']}
+                                        </div>
+                                        <div class="dates" v-if="item['date']">
+                                            ${item['date']}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-item-col">
+                                    <div class="description">
+                                        ${item['description']}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <script type="module">
+                    import data from '/data/data.js';
+                    
+                    var listApp = new Vue({
+                        delimiters: ['${', '}'],
+                        el: '.list',
+                        data: {
+                        },
+                        computed: {
+                            featured: function(){
+                                return true;
+                                return false;
+                            },
+                            gallery: function(){
+                                if (this.featured){
+                                    return data.data.slice(0, 5);
+                                } else{
+                                    return data.data;
+                                }
+                            }
+                        },
+                        methods: {
+                        }
+                    })
+                    </script>
+                </div>
+            </div>
         </div>
     </main>
     <script src="/scripts/all.js"></script>

@@ -8,7 +8,7 @@
         <div class="main home-template">
             <div class="main-area">
                 <div class="banner">
-                    <img src="/img/dark-bg.jpg">
+                    <img src="/img/tyler-4.jpg">
                 </div>
                 <div class="main-image">
                     <img src="/img/tyler-1.jpg">
@@ -22,6 +22,7 @@
                 <div class="main-content">
                     <h1>I'm Tyler Kung</h1>
                     <h2>I build websites</h2>
+                    <div class="scroller"></div>
                 </div>
                 <div class="secondary-content">
                     <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -37,6 +38,14 @@
             </div>
         </div>
         <div class="content">
+            <div class="row">
+                <div class="col-sm-3 sidebar-area">
+                    <h5 class="rotated">Recent Projects</h5>
+                </div>
+                <div class="col-sm-9 content-area">
+                    {{> list featured='true'}}
+                </div>
+            </div>
         </div>
     </main>
     <script src="/scripts/all.js"></script>

@@ -1,0 +1,58 @@
+<div class="list">
+    <div v-for="(item, index) in gallery" class="list-item">
+        <div class="l-item-img">
+            <img :src="item['image-1']"/>
+        </div>
+        <div class="l-item-content">
+            <div class="l-item-col">
+                <h2>${item['title']}</h2>
+                <h3>${item['headline']}</h3>
+                <div class="tags-container" v-if="item['tags']">
+                    <div class="tags">
+                        ${item['tags']}
+                    </div>
+                    <div class="dates" v-if="item['date']">
+                        ${item['date']}
+                    </div>
+                </div>
+            </div>
+            <div class="l-item-col">
+                <div class="description">
+                    ${item['description']}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="module">
+{{#if data-url}}
+import data from '{{data-url}}'
+{{else}}
+import data from '/data/data.js';
+{{/if}}
+
+var listApp = new Vue({
+    delimiters: ['${', '}'],
+    el: '.list',
+    data: {
+    },
+    computed: {
+        featured: function(){
+            {{#if featured}}
+            return {{featured}};
+            {{/if}}
+            return false;
+        },
+        gallery: function(){
+            if (this.featured){
+                return data.data.slice(0, 5);
+            } else{
+                return data.data;
+            }
+        }
+    },
+    methods: {
+    }
+})
+</script>

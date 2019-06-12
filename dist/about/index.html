@@ -37,13 +37,13 @@
   	<link rel="shortcut icon" href="" type="image/x-icon">
   </head>
   <body>
-      <div class="nav">
+      <div class="nav" v-bind:class="{'active': menuOpen}">
       	<a class="logo-link" href="/">
       		<div class="logo">
       			tk
       		</div>
       	</a>
-      	<div class="menu" v-bind:class="{'active': menuOpen}">
+      	<div class="menu">
       		<div class="menu-button" v-on:click="menuOpen = !menuOpen">
       			<div class="bar"></div>
       			<div class="bar"></div>
