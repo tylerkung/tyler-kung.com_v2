@@ -1,18 +1,32 @@
 .btn{
     border-radius: 0;
     padding: 1rem 2rem;
+    font-weight: bold;
     @media (max-width: 767px){
         width: 100%;
         margin-bottom: 1rem;
     }
+    &:hover{
+        text-decoration: none;
+    }
 }
-.btn-primary{
-    background-color: #eee;
-    border-color: #eee;
-    color: #212121;
+.btn-primary, .btn-default{
+    background-color: #a1a8c7;
+    color: #F6F7FA;
+    border-color: #A1A8C7;
     &:hover, &:active{
         color: #eee !important;
-        background-color: transparent !important;
-        border-color: #eee !important;
+        background-color: #030209 !important;
+        border-color: #030209;
+    }
+}
+.btn-secondary{
+    background-color: transparent;
+    color: #030209;
+    border: 1px solid #030209;
+    &:hover, &:active{
+        color: #eee !important;
+        background-color: #030209 !important;
+        border-color: #030209;
     }
 }

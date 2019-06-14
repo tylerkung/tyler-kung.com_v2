@@ -9,12 +9,25 @@ html {
 body {
   margin:0;
   font-size: 16px;
-  // line-height: 2;
   color: #030209;
-  // font-family: "Roboto Mono", Helvetica, Arial, Times, sans-serif;
   overflow-x: hidden;
   width: 100%;
-  // background-color: #F6F7FA;
+}
+
+.dark-header{
+    .main-header{
+        background-color: #2b2a31;
+        h1{
+            color: #F6F7FA;
+        }
+    }
+    .nav{
+        .menu{
+            .bar{
+                background-color: #fff;
+            }
+        }
+    }
 }
 
 .transition-fade {

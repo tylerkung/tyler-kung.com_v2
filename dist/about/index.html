@@ -32,11 +32,11 @@
   	<!-- <script src="/includes/turbolinks.js"></script> -->
   	<script src="/includes/swup.js"></script>
   	<!-- <script src="https://unpkg.com/swup@latest/dist/swup.js"></script> -->
-  	<link href="https://fonts.googleapis.com/css?family=Kanit:800i,900i|Raleway:300,300i,400,400i,600&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Kanit:800i,900i|Raleway:300,300i,400,400i,600,800&display=swap" rel="stylesheet">
   	
   	<link rel="shortcut icon" href="" type="image/x-icon">
   </head>
-  <body>
+  <body class="dark-header">
       <div class="nav" v-bind:class="{'active': menuOpen}">
       	<a class="logo-link" href="/">
       		<div class="logo">
@@ -76,11 +76,18 @@
       		</div>
       	</div>
       </div>
-    <main id="swup" class="transition-fade">
-    <div class="main">
+    <main>
+    <div class="main secondary-template">
         <div class="main-header">
-            <div class="header-text">
-                <h1>About</h1>
+            <div class="header-text row">
+                <div class="col-sm-8">
+                    <h1>I'm Tyler Kung</h1>
+                    <h2>Front-End Developer, Designer, Warriors Fan, Gamer, and Burrito Connoisseur. I work to bring captivating digital ideas to life. I enjoy the unconventional and am constantly looking for what's next.</h2>
+                    <h2 style="color: #014cce">Let's work together.</h2>
+                </div>
+            </div>
+            <div class="header-image-container">
+                <img src="/img/about-1.jpg" class="header-img-left">
             </div>
         </div>
         <div class="main-content">

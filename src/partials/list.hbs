@@ -1,7 +1,9 @@
 <div class="list">
-    <div v-for="(item, index) in gallery" class="list-item">
+    <div v-for="(item, index) in gallery" class="list-item" :class="{'featured': index < 2}">
         <div class="l-item-img">
-            <img :src="item['image-1']"/>
+            <a :href="item['link']">
+                <img :src="item['image-1']"/>
+            </a>
         </div>
         <div class="l-item-content">
             <div class="l-item-col">
@@ -16,9 +18,16 @@
                     </div>
                 </div>
             </div>
-            <div class="l-item-col">
+            <div class="l-item-col" v-if="index < 2">
                 <div class="description">
-                    ${item['description']}
+                    <p class="description-content">${item['description']}</p>
+                    <div class="cta">
+                        <a :href="item['link']">
+                            <div class="btn btn-default">
+                                ${item['link-name']}
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -46,7 +55,7 @@ var listApp = new Vue({
         },
         gallery: function(){
             if (this.featured){
-                return data.data.slice(0, 5);
+                return data.data.slice(0, 4);
             } else{
                 return data.data;
             }

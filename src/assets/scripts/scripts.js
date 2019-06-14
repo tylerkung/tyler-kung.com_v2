@@ -1,5 +1,5 @@
 // import Swup from 'swup';
-var swup = new Swup(); // only this line when included with script tag
+// var swup = new Swup(); // only this line when included with script tag
 
 var menuApp = new Vue({
     el: '.nav',
@@ -8,10 +8,10 @@ var menuApp = new Vue({
     },
 })
 
-swup.on('animationOutStart', function(){
-    menuApp.menuOpen = false;
-    // location.reload(true);
-});
+// swup.on('animationOutStart', function(){
+//     menuApp.menuOpen = false;
+//     // location.reload(true);
+// });
 
 // $(document).ready(function(){
     // $('.menu-button').click(function(){

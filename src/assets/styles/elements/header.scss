@@ -1,0 +1,23 @@
+.main-header{
+    margin-bottom: 200px;
+    padding-top: 120px;
+    margin-left: 8.333%;
+    position: relative;
+    .header-text{
+        margin-left: 8.333%;
+    }
+    .header-image-container{
+        margin-left: 8.333%;
+        margin-bottom: -100px;
+        // position: absolute;
+        bottom: 0;
+        .header-img-left{
+            width: 700px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .header-img-right{
+
+        }
+    }
+}
