@@ -32,7 +32,7 @@
 	<!-- <script src="/includes/turbolinks.js"></script> -->
 	<script src="/includes/swup.js"></script>
 	<!-- <script src="https://unpkg.com/swup@latest/dist/swup.js"></script> -->
-	<link href="https://fonts.googleapis.com/css?family=Kanit:800i,900i|Raleway:300,300i,400,400i,600,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kanit:800i,900i|Raleway:300,300i,400,400i,600,800|Arapey&display=swap" rel="stylesheet">
 	
 	<link rel="shortcut icon" href="" type="image/x-icon">
 </head>
@@ -117,11 +117,14 @@
                 </div>
                 <div class="col-sm-9 content-area">
                     <div class="list">
-                        <div v-for="(item, index) in gallery" class="list-item" :class="{'featured': index < 2}">
+                        <div v-for="(item, index) in gallery" class="list-item" :class="{'half-item': featured && index > 1}">
                             <div class="l-item-img">
                                 <a :href="item['link']">
                                     <img :src="item['image-1']"/>
                                 </a>
+                                <div class="dates" v-if="item['date']">
+                                    ${item['date']}
+                                </div>
                             </div>
                             <div class="l-item-content">
                                 <div class="l-item-col">
@@ -131,12 +134,9 @@
                                         <div class="tags">
                                             ${item['tags']}
                                         </div>
-                                        <div class="dates" v-if="item['date']">
-                                            ${item['date']}
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="l-item-col" v-if="index < 2">
+                                <div class="l-item-col" v-if="index < 2 && featured || !featured">
                                     <div class="description">
                                         <p class="description-content">${item['description']}</p>
                                         <div class="cta">

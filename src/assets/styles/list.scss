@@ -5,34 +5,58 @@
     justify-content: space-between;
     .list-item{
         margin-bottom: 5em;
-        &.featured{
-            width: 100%;
-            padding: 0;
-            .l-item-img{
-                height: 500px;
+
+        width: 100%;
+        padding: 0;
+        @media (max-width: 767px){
+            padding-left: 50px;
+        }
+        .l-item-img{
+            height: 500px;
+            img{
+                transition: all 0.2s ease;
             }
-            .l-item-content{
-                @media (min-width: 1200px){
-                    display: flex;
-                    justify-content: space-between;
-                    .l-item-col{
-                        width: calc(50% - 40px);
-                    }
+            &:hover{
+                img{
+                    opacity: 0.9;
                 }
             }
         }
-        @media (min-width: 1200px){
-            width: calc(50% - 40px);
+        .l-item-content{
+            @media (min-width: 1200px){
+                display: flex;
+                justify-content: space-between;
+                .l-item-col{
+                    width: calc(50% - 40px);
+                }
+            }
+        }
+        &.half-item{
+            @media (min-width: 1200px){
+                width: calc(50% - 40px);
+            }
+            .l-item-content{
+                .l-item-col{
+                    width: 100% !important;
+                }
+            }
         }
     }
     .l-item-img{
         width: 100%;
         height: 300px;
-        overflow: hidden;
+        position: relative;
         img{
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+        .dates{
+            position: absolute;
+            top: 0;
+            left: -40px;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
         }
     }
     h2{
@@ -49,7 +73,7 @@
         width: 100%;
         margin-top: 3em;
         h3{
-            max-width: 70%;
+            max-width: 85%;
         }
         .description{
             font-size: 1.35em;
@@ -59,12 +83,6 @@
             display: flex;
             font-weight: bold;
             margin-bottom: 1em;
-        }
-        .dates{
-            &:before{
-                content: "\2022";
-                margin-left: 5px;
-            }
         }
     }
 

@@ -77,74 +77,14 @@
   	</div>
   </div>
     <main>
-    <div class="main">
+    <div class="main work-template">
         <div class="main-header">
             <div class="header-text row">
-                <h1>Work</h1>
+                <h1>Friends</h1>
             </div>
         </div>
         <div class="main-content">
             <div class="container">
-                <div class="list">
-                    <div v-for="(item, index) in gallery" class="list-item" :class="{'half-item': featured && index > 1}">
-                        <div class="l-item-img">
-                            <a :href="item['link']">
-                                <img :src="item['image-1']"/>
-                            </a>
-                            <div class="dates" v-if="item['date']">
-                                ${item['date']}
-                            </div>
-                        </div>
-                        <div class="l-item-content">
-                            <div class="l-item-col">
-                                <h2>${item['title']}</h2>
-                                <h3>${item['headline']}</h3>
-                                <div class="tags-container" v-if="item['tags']">
-                                    <div class="tags">
-                                        ${item['tags']}
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="l-item-col" v-if="index < 2 && featured || !featured">
-                                <div class="description">
-                                    <p class="description-content">${item['description']}</p>
-                                    <div class="cta">
-                                        <a :href="item['link']">
-                                            <div class="btn btn-default">
-                                                ${item['link-name']}
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <script type="module">
-                import data from '/data/data.js';
-                
-                var listApp = new Vue({
-                    delimiters: ['${', '}'],
-                    el: '.list',
-                    data: {
-                    },
-                    computed: {
-                        featured: function(){
-                            return false;
-                        },
-                        gallery: function(){
-                            if (this.featured){
-                                return data.data.slice(0, 4);
-                            } else{
-                                return data.data;
-                            }
-                        }
-                    },
-                    methods: {
-                    }
-                })
-                </script>
             </div>
         </div>
     </div>

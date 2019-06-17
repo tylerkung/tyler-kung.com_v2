@@ -1,5 +1,4 @@
 .main-header{
-    margin-bottom: 200px;
     padding-top: 120px;
     margin-left: 8.333%;
     position: relative;
@@ -7,14 +6,24 @@
         margin-left: 8.333%;
     }
     .header-image-container{
-        margin-left: 8.333%;
-        margin-bottom: -100px;
-        // position: absolute;
+
         bottom: 0;
         .header-img-left{
-            width: 700px;
-            height: 300px;
+            width: 900px;
+            height: 400px;
+            position: absolute;
+            left: -4.16666%;
+            bottom: -200px;
             object-fit: cover;
+            object-position: center center;
+        }
+        .header-img-right{
+            width: 400px;
+            height: 600px;
+            position: absolute;
+            object-fit: cover;
+            left: 900px;
+            bottom: -300px;
         }
         .header-img-right{
 

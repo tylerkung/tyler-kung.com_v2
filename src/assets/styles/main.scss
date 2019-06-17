@@ -12,6 +12,19 @@ body {
   color: #030209;
   overflow-x: hidden;
   width: 100%;
+  padding-bottom: 4em;
+}
+
+.container{
+    @media (min-width: 1200px){
+        margin-left: calc(16.666% - 15px);
+    }
+    @media (min-width: 1600px){
+        &:not(.reader-container){
+            max-width: 1560px;
+        }
+    }
+
 }
 
 .dark-header{
@@ -30,6 +43,9 @@ body {
     }
 }
 
+img{
+    max-width: 100%;
+}
 .transition-fade {
   transition: 0.4s;
   opacity: 1;
