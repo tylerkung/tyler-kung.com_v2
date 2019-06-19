@@ -1,0 +1,33 @@
+.work-template{
+
+}
+.work-intro{
+    max-width: unset;
+    height: 700px;
+    @media (max-width: 1200px){
+        padding: 0;
+        height: 400px;
+    }
+    img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    @media (min-width: 1200px){
+    }
+    + .container{
+        padding-top: 80px;
+        section{
+            margin-bottom: 4em;
+        }
+        @media (min-width: 1200px){
+            margin-top: -120px;
+            padding-top: 60px;
+            background-color: #fff;
+            position: relative;
+        }
+        @media (min-width: 1600px){
+            max-width: 1300px;
+        }
+    }
+}

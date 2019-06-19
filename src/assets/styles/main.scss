@@ -14,6 +14,14 @@ body {
   width: 100%;
   padding-bottom: 4em;
 }
+section{
+    margin-bottom: 2em;
+}
+.bg-grey{
+    background-color: #f9f9f9;
+    padding-top: 2em;
+    margin-top: -2em;
+}
 
 .container{
     @media (min-width: 1200px){
