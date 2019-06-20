@@ -1,12 +1,16 @@
 .work-template{
-
+    .container:not(.work-intro){
+        @media (min-width: 1600px){
+            max-width: 1300px !important;
+        }
+    }
 }
 .work-intro{
     max-width: unset;
     height: 700px;
     @media (max-width: 1200px){
         padding: 0;
-        height: 400px;
+        height: 500px;
     }
     img{
         object-fit: cover;
@@ -29,5 +33,11 @@
         @media (min-width: 1600px){
             max-width: 1300px;
         }
+    }
+}
+
+.section-header{
+    @media (min-width: 992px){
+        text-align: right;
     }
 }

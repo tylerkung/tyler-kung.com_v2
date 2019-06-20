@@ -43,6 +43,28 @@ export default{
               "date": "2018",
     		  "link": "https://vineti.com/",
               "link-name": "View Website"
+    	  },
+          {
+    		  "title": "3 Things I Learned at Smashing Conference",
+    		  "image-1": "/img/tobey.jpg",
+    		  "image-2": "",
+              "headline": "",
+    		  "description": "My recap after attending Smashing Conference 2019 in San Francisco",
+              "tags": "Front-End, Conference, Accessibility",
+              "date": "2019",
+    		  "link": "https://medium.com/@tylerkung/3-things-i-learned-at-smashing-conference-sf-2019-126cb2dfdfc4",
+              "link-name": "Read Article"
+    	  },
+          {
+    		  "title": "Albireo Pharma",
+    		  "image-1": "/img/albireo.jpg",
+    		  "image-2": "",
+              "headline": "Clinical-Stage Biopharmaceuticals",
+    		  "description": "One of the first websites I did as a front-end lead at HDMZ.",
+              "tags": "Development, Front-End",
+              "date": "2018",
+    		  "link": "https://www.albireopharma.com/",
+              "link-name": "View Website"
     	  }
       ]
 }
