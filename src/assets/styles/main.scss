@@ -28,6 +28,8 @@ section{
 .container{
     @media (min-width: 1200px){
         margin-left: calc(16.666% - 15px);
+        width: calc(83.333% + 30px);
+        max-width: unset;
     }
     @media (min-width: 1600px){
         &:not(.reader-container){

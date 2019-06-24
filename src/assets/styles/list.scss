@@ -26,6 +26,7 @@
             @media (min-width: 1200px){
                 display: flex;
                 justify-content: space-between;
+                max-width: 1320px;
                 .l-item-col{
                     width: calc(50% - 40px);
                 }
