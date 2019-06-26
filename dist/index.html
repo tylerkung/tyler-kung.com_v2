@@ -28,6 +28,7 @@
 	<script src="/includes/bootstrap.min.js"></script>
 	<script src="/includes/scrollmagic.min.js"></script>
 	<script src="/includes/debug.addIndicators.min.js"></script>
+	<!-- <script src="/includes/debug.addIndicators.min.js"></script> -->
 	<!-- <script src="/includes/turbolinks.js"></script> -->
 	<script src="/includes/swup.js"></script>
 	<!-- <script src="https://unpkg.com/swup@latest/dist/swup.js"></script> -->
@@ -125,10 +126,10 @@
         </div>
         <div class="content">
             <div class="row">
-                <div class="col-sm-3 sidebar-area">
+                <div class="col-md-3 col-sm-2 sidebar-area">
                     <h5 class="rotated">Recent Projects</h5>
                 </div>
-                <div class="col-sm-9 content-area">
+                <div class="col-md-9 col-sm-10 content-area">
                     <div class="list">
                         <div v-for="(item, index) in gallery" class="list-item" :class="{'half-item': featured && index > 1}">
                             <div class="l-item-img">

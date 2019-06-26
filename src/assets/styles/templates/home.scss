@@ -1,7 +1,7 @@
 .home-template.main .main-area{
     display: grid;
     grid-template-columns: 50px auto auto auto 50px;
-    grid-template-rows: repeat(4, minmax(100px, 20vh)) repeat(5, minmax(20px, auto));
+    grid-template-rows: repeat(5, minmax(200px, 20vh));
     grid-row-gap: 20px;
     @media (min-width: 768px){
         grid-template-columns: repeat(12, 1fr);
@@ -9,6 +9,9 @@
         height: 100vh;
         min-height: 700px;
         grid-row-gap: 0px;
+    }
+    @media (max-width: 767px){
+        margin-bottom: 2em;
     }
     .banner, .main-image, .sidebar-image, .gallery{
         img + img{
@@ -33,13 +36,14 @@
         grid-column: 3 / span 2;
         grid-row: 2 / span 2;
         position: relative;
+        z-index: 1;
         overflow: hidden;
         img{
             transition-delay: 0.2s;
         }
         @media (max-width: 767px){
             grid-column: 2 / span 3;
-            grid-row: 5 / span 1;
+            grid-row: 4 / span 2;
         }
     }
     .sidebar{
@@ -58,7 +62,7 @@
             }
         }
         @media (max-width: 767px){
-            grid-column: 1 / span 5;
+            display: none;
         }
     }
     .sidebar-image{
@@ -69,9 +73,7 @@
             transition-delay: 0.4s;
         }
         @media (max-width: 767px){
-            grid-column: 1 / span 5;
-            height: 200px;
-            grid-row: 6 / span 1;
+            display: none;
         }
     }
     .main-content{
@@ -127,8 +129,7 @@
             grid-row: 2 / span 4;
         }
         @media (max-width: 767px){
-            grid-column: 2 / span 3;
-            grid-row: 5 / span 1;
+            display: none;
         }
     }
     .cta{
@@ -145,7 +146,7 @@
             text-transform: uppercase;
         }
         @media (max-width: 767px){
-            grid-column: 1 / span 5;
+            display: none;
         }
     }
     .gallery{
@@ -196,7 +197,9 @@
                     transform: translateX(3px);
                 }
             }
-
+        }
+        @media (max-width: 767px){
+            display: none;
         }
     }
     .banner, .main-image, .sidebar-image, .gallery{
@@ -227,14 +230,16 @@
     }
 }
 h5.rotated{
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    text-transform: uppercase;
-    position: relative;
-    right: calc(-66.67% + 7px);
-    margin: 0;
-    padding-bottom: 130px;
-    font-size: 0.8em;
+    @media (min-width: 768px){
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      text-transform: uppercase;
+      position: relative;
+      right: calc(-66.67% + 7px);
+      margin: 0;
+      padding-bottom: 130px;
+      font-size: 0.8em;
+    }
 }
 
 @keyframes scroller{
