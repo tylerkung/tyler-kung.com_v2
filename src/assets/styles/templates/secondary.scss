@@ -3,4 +3,9 @@
         padding-bottom: 300px;
         margin-bottom: 400px;
     }
+    .container{
+        @media (min-width: 1200px){
+            max-width: 1140px;
+        }
+    }
 }

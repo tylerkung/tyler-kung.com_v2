@@ -8,16 +8,22 @@
         <div class="main home-template">
             <div class="main-area">
                 <div class="banner">
-                    <img src="/img/tyler-4.jpg">
+                    <transition name="fade">
+                        <img :key="photos[activeIndex][0]" :src="photos[activeIndex][0]">
+                    </transition>
                 </div>
                 <div class="main-image">
-                    <img src="/img/tyler-1.jpg">
+                    <transition name="fade">
+                        <img :key="photos[activeIndex][1]" :src="photos[activeIndex][1]">
+                    </transition>
                 </div>
                 <div class="sidebar">
                     <a href="/about">About</a>
                 </div>
                 <div class="sidebar-image">
-                    <img src="/img/tyler-3.jpg">
+                    <transition name="fade">
+                        <img :key="photos[activeIndex][2]" :src="photos[activeIndex][2]">
+                    </transition>
                 </div>
                 <div class="main-content">
                     <h1>I'm Tyler Kung</h1>
@@ -31,9 +37,17 @@
                     <a href="/work">Projects</a>
                 </div>
                 <div class="gallery">
-                    <img src="/img/tyler-2.jpg">
+                    <transition name="fade">
+                        <img :key="photos[activeIndex][3]" :src="photos[activeIndex][3]">
+                    </transition>
                 </div>
                 <div class="controls">
+                    <div class="arrow-left" @click="prevSlide">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="arrow-right" @click="nextSlide">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,6 +63,54 @@
         </div>
     </main>
     <!-- <div id="swup" class="transition-fade"></div> -->
+    <script>
+    var homeApp = new Vue({
+        delimiters: ['${', '}'],
+        el: '.home-template .main-area',
+        data: {
+            activeIndex: 0,
+            sliderTime: 7000,
+            interval: '',
+            photos: [
+                ['/img/tyler-4.jpg', '/img/tyler-2.jpg', '/img/tyler-3.jpg', '/img/tyler-1.jpg'],
+                ['/img/about-1.jpg', '/img/about-1.jpg', '/img/tahoe.jpg', '/img/about-4.jpg'],
+                ['/img/wuzhen-1.jpg', '/img/tyler-5.jpg', '/img/wuzhen-2.jpg', '/img/wuzhen-3.jpg']
+            ]
+        },
+        computed: {
+        },
+        methods: {
+            nextSlide: function(){
+                if (this.activeIndex == this.photos.length-1){
+                    this.activeIndex = 0;
+                }
+                else{
+                    this.activeIndex++;
+                }
+                clearInterval(this.interval);
+                this.timerSet();
+            },
+            prevSlide: function(){
+                if (this.activeIndex == 0){
+                    this.activeIndex = this.photos.length-1;
+                }
+                else{
+                    this.activeIndex--;
+                }
+                clearInterval(this.interval);
+                this.timerSet();
+            },
+            timerSet: function(){
+                this.interval = setInterval(function(){
+                    homeApp.nextSlide();
+                }.bind(this), this.sliderTime);
+            }
+        },
+        mounted: function(){
+            this.timerSet()
+        }
+    })
+    </script>
     <script src="/scripts/all.js"></script>
 </body>
 </html>

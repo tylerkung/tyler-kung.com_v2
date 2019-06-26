@@ -10,9 +10,21 @@
         min-height: 700px;
         grid-row-gap: 0px;
     }
+    .banner, .main-image, .sidebar-image, .gallery{
+        img + img{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
     .banner{
         grid-column: 1 / span 6;
         grid-row: 1 / span 2;
+        position: relative;
+        overflow: hidden;
+        img{
+            transition-delay: 0.4s;
+        }
         @media (max-width: 767px){
             display: none;
         }
@@ -20,6 +32,11 @@
     .main-image{
         grid-column: 3 / span 2;
         grid-row: 2 / span 2;
+        position: relative;
+        overflow: hidden;
+        img{
+            transition-delay: 0.2s;
+        }
         @media (max-width: 767px){
             grid-column: 2 / span 3;
             grid-row: 5 / span 1;
@@ -28,6 +45,8 @@
     .sidebar{
         grid-column: 1 / span 1;
         grid-row: 3 / span 2;
+        position: relative;
+        overflow: hidden;
         @media (min-width: 768px){
             writing-mode: vertical-rl;
             display: flex;
@@ -45,6 +64,10 @@
     .sidebar-image{
         grid-column: 1 / span 1;
         grid-row: 5 / span 2;
+        position: relative;
+        img{
+            transition-delay: 0.4s;
+        }
         @media (max-width: 767px){
             grid-column: 1 / span 5;
             height: 200px;
@@ -128,13 +151,53 @@
     .gallery{
         grid-column: 9 / span 4;
         grid-row: 1 / span 6;
+        position: relative;
+        overflow: hidden;
         @media (max-width: 767px){
             grid-column: 1 / span 5;
             grid-row: 1 / span 4;
         }
     }
     .controls{
+        grid-column: 11 / span 2;
+        grid-row: 6 / span 1;
+        display: flex;
+        background-color: #fff;
+        position: relative;
+        z-index: 99;
+        .arrow-left{
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            i{
+                transition: transform 0.2s ease;
+            }
+            &:hover{
+                i{
+                    transform: translateX(-3px);
+                }
+            }
+        }
+        .arrow-right{
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            i{
+                transition: transform 0.2s ease;
+            }
+            &:hover{
+                i{
+                    transform: translateX(3px);
+                }
+            }
 
+        }
     }
     .banner, .main-image, .sidebar-image, .gallery{
         img{
