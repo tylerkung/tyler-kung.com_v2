@@ -13,6 +13,8 @@ $(document).ready(function () {
         console.log('hello');
         new ScrollMagic.Scene({
             triggerElement: this
-        }).setClassToggle(this, 'reveal').addIndicators().reverse(false).addTo(controller);
+        }).setClassToggle(this, 'reveal')
+        // .addIndicators()
+        .reverse(false).addTo(controller);
     });
 });

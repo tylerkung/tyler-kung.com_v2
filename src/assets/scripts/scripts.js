@@ -13,7 +13,7 @@ $(document).ready(function(){
             triggerElement: this
         })
         .setClassToggle(this, 'reveal')
-        .addIndicators()
+        // .addIndicators()
         .reverse(false)
         .addTo(controller);
     })

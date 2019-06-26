@@ -134,7 +134,7 @@
                         <div v-for="(item, index) in gallery" class="list-item" :class="{'half-item': featured && index > 1}">
                             <div class="l-item-img">
                                 <a :href="item['link']">
-                                    <div v-if="!parallaxOff" class="parallax" data-parallax="scroll" :data-image-src="item['image-1']" data-speed="0.8" data-natural-height="500" data-position="center">
+                                    <div v-if="!parallaxOff" class="parallax" data-parallax="scroll" :data-image-src="item['image-1']" data-speed="0.9" data-natural-height="500" data-position="center">
                                     </div>
                                     <img v-if="parallaxOff" :src="item['image-1']"/>
                                 </a>

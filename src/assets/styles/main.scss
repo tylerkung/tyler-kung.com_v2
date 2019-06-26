@@ -7,7 +7,12 @@ html {
   overflow-x: hidden;
 }
 .parallax-mirror{
-    z-index: 100 !important;
+    z-index: 1 !important;
+    pointer-events: none;
+    // transition: opacity 0.2s ease;
+    // &:hover{
+    //     opacity: 0.9;
+    // }
 }
 body {
   margin:0;
