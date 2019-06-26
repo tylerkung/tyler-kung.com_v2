@@ -1,6 +1,3 @@
-// import Swup from 'swup';
-// var swup = new Swup(); // only this line when included with script tag
-
 var menuApp = new Vue({
     el: '.nav',
     data: {
@@ -8,13 +5,16 @@ var menuApp = new Vue({
     },
 })
 
-// swup.on('animationOutStart', function(){
-//     menuApp.menuOpen = false;
-//     // location.reload(true);
-// });
-
-// $(document).ready(function(){
-    // $('.menu-button').click(function(){
-    //     $('.menu, .menu-overlay').toggleClass('active');
-    // })
-// })
+$(document).ready(function(){
+    var controller = new ScrollMagic.Controller();
+    $('.list .list-item').each(function(){
+        console.log('hello');
+        new ScrollMagic.Scene({
+            triggerElement: this
+        })
+        .setClassToggle(this, 'reveal')
+        .addIndicators()
+        .reverse(false)
+        .addTo(controller);
+    })
+})

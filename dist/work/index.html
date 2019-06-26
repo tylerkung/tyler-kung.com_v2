@@ -28,7 +28,7 @@
   	<script src="/includes/bootstrap.min.js"></script>
   	<script src="/includes/scrollmagic.min.js"></script>
   	<script src="/includes/debug.addIndicators.min.js"></script>
-  	<!-- <script src="/includes/debug.addIndicators.min.js"></script> -->
+  	<!-- <script src="/includes/parallaxy.min.js"></script> -->
   	<!-- <script src="/includes/turbolinks.js"></script> -->
   	<script src="/includes/swup.js"></script>
   	<!-- <script src="https://unpkg.com/swup@latest/dist/swup.js"></script> -->
@@ -89,7 +89,9 @@
                     <div v-for="(item, index) in gallery" class="list-item" :class="{'half-item': featured && index > 1}">
                         <div class="l-item-img">
                             <a :href="item['link']">
-                                <img :src="item['image-1']"/>
+                                <div v-if="!parallaxOff" class="parallax" data-parallax="scroll" :data-image-src="item['image-1']" data-speed="0.8" data-natural-height="500" data-position="center">
+                                </div>
+                                <img v-if="parallaxOff" :src="item['image-1']"/>
                             </a>
                             <div class="dates" v-if="item['date']">
                                 ${item['date']}
@@ -131,6 +133,9 @@
                     },
                     computed: {
                         featured: function(){
+                            return false;
+                        },
+                        parallaxOff: function(){
                             return false;
                         },
                         gallery: function(){

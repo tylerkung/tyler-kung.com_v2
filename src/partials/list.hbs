@@ -2,7 +2,9 @@
     <div v-for="(item, index) in gallery" class="list-item" :class="{'half-item': featured && index > 1}">
         <div class="l-item-img">
             <a :href="item['link']">
-                <img :src="item['image-1']"/>
+                <div v-if="!parallaxOff" class="parallax" data-parallax="scroll" :data-image-src="item['image-1']" data-speed="0.8" data-natural-height="500" data-position="center">
+                </div>
+                <img v-if="parallaxOff" :src="item['image-1']"/>
             </a>
             <div class="dates" v-if="item['date']">
                 ${item['date']}
@@ -50,6 +52,12 @@ var listApp = new Vue({
         featured: function(){
             {{#if featured}}
             return {{featured}};
+            {{/if}}
+            return false;
+        },
+        parallaxOff: function(){
+            {{#if parallax-off}}
+            return {{parallax-off}};
             {{/if}}
             return false;
         },

@@ -6,6 +6,9 @@ html {
   max-width: 100vw;
   overflow-x: hidden;
 }
+.parallax-mirror{
+    z-index: 100 !important;
+}
 body {
   margin:0;
   font-size: 16px;
