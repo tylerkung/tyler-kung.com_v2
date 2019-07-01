@@ -6,7 +6,7 @@ export default{
     		  "image-2": "",
               "headline": "A platform for music lovers and creative minds",
     		  "description": "I teamed up with close friend Mike Woo, creator of FRIENDS, to bring his brand to a digital space and to design, develop, and execute their website.",
-              "tags": "Strategy, Design, Development",
+              "tags": "SASS, HandlebarsJS, VueJS, Gulp, Strategy, Design, Development",
               "date": "2019",
     		  "link": "/work/friends",
               "link-name": "View Case Study"
@@ -17,7 +17,7 @@ export default{
      		  "image-2": "",
                "headline": "San Francisco's largest, independently owned pet store",
      		  "description": "My design process, brainstorming, researching, and execution for The Animal Connection's stickers.",
-               "tags": "Branding, Logo, Stickers",
+               "tags": "Illustrator, Branding, Logo, Stickers",
                "date": "2019",
      		  "link": "/work/the-animal-connection",
                "link-name": "View Case Study"
@@ -39,7 +39,7 @@ export default{
     		  "image-2": "",
               "headline": "Advanced therapies require advanced software",
     		  "description": "I was the lead front-end developer at HDMZ for Vineti's corporate website, who provide software for personalized therapies.",
-              "tags": "Development, Front-End, SVG Animation",
+              "tags": "LESS, Development, Front-End, SVG Animation",
               "date": "2018",
     		  "link": "https://vineti.com/",
               "link-name": "View Website"

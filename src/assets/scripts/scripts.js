@@ -8,7 +8,6 @@ var menuApp = new Vue({
 $(document).ready(function(){
     var controller = new ScrollMagic.Controller();
     $('.list .list-item').each(function(){
-        console.log('hello');
         new ScrollMagic.Scene({
             triggerElement: this
         })
