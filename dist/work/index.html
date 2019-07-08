@@ -116,6 +116,11 @@
                                                 ${item['link-name']}
                                             </div>
                                         </a>
+                                        <a v-if="item['github']" :href="item['github']" target="_blank">
+                                            <div class="btn btn-secondary github-btn">
+                                                <i class="fab fa-github"></i>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

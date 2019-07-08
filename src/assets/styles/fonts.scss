@@ -19,7 +19,22 @@ h3{
 h4{
 
 }
-
+h5.rotated{
+    @media (min-width: 768px){
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      text-transform: uppercase;
+      position: relative;
+      right: calc(-66.67% + 7px);
+      margin: 0;
+      font-size: 0.8em;
+      padding-bottom: 5px;
+    }
+}
+.reader{
+    font-family: "Arapey";
+    font-size: 19px;
+}
 p{
     &.reader{
         font-family: "Arapey";
@@ -33,8 +48,9 @@ a{
     color: #0e19b8;
 }
 ul{
+    padding-left: 0;
     li{
-
+        list-style: none;
     }
 }
 .lead{

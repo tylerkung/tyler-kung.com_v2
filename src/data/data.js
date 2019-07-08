@@ -6,10 +6,11 @@ export default{
     		  "image-2": "",
               "headline": "A platform for music lovers and creative minds",
     		  "description": "I teamed up with close friend Mike Woo, creator of FRIENDS, to bring his brand to a digital space and to design, develop, and execute their website.",
-              "tags": "SASS, HandlebarsJS, VueJS, Gulp, Strategy, Design, Development",
+              "tags": "SCSS, Handlebars, VueJS, Gulp, Design, Development",
               "date": "2019",
-    		  "link": "/work/friends",
-              "link-name": "View Case Study"
+    		  "link": "http://thefriendssf.com",
+              "link-name": "View Website",
+              "github": 'https://github.com/tylerkung/friends'
     	  },
           {
      		  "title": "The Animal Connection",

@@ -9,6 +9,7 @@
         height: 100vh;
         min-height: 700px;
         grid-row-gap: 0px;
+        max-height: 1200px;
     }
     @media (max-width: 767px){
         margin-bottom: 2em;
@@ -220,6 +221,10 @@
     background-color: #f9f9f9;
     .row{
         margin: 0;
+        margin-bottom: 2em;
+        &:first-of-type{
+            padding-top: 130px;
+        }
     }
     div[class*="col"]{
         padding: 0;
@@ -228,18 +233,6 @@
 .content-area{
     @media (min-width: 1200px){
         max-width: 1300px;
-    }
-}
-h5.rotated{
-    @media (min-width: 768px){
-      writing-mode: vertical-rl;
-      transform: rotate(180deg);
-      text-transform: uppercase;
-      position: relative;
-      right: calc(-66.67% + 7px);
-      margin: 0;
-      padding-bottom: 130px;
-      font-size: 0.8em;
     }
 }
 

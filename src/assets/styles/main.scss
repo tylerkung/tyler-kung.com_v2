@@ -9,10 +9,6 @@ html {
 .parallax-mirror{
     z-index: 1 !important;
     pointer-events: none;
-    // transition: opacity 0.2s ease;
-    // &:hover{
-    //     opacity: 0.9;
-    // }
 }
 body {
   margin:0;
@@ -44,7 +40,14 @@ section{
             max-width: 1560px;
         }
     }
-
+}
+.reader-container{
+    .row{
+        margin-bottom: 3em;
+    }
+}
+.lead-row{
+    margin-bottom: 5em;
 }
 
 .dark-header{
