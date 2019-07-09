@@ -36,59 +36,67 @@
   	
   	<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
   </head>
-  <body class="">
-      <div class="nav" v-bind:class="{'active': menuOpen}">
-      	<a class="logo-link" href="/">
-      		<div class="logo">
-      			tk
-      		</div>
-      	</a>
-      	<div class="menu">
-      		<div class="menu-button" v-on:click="menuOpen = !menuOpen">
-      			<div class="bar"></div>
-      			<div class="bar"></div>
-      		</div>
-      	</div>
-      	<div class="menu-overlay" v-bind:class="{'active': menuOpen}">
-      		<div class="menu-wrapper">
-      			<ul>
-      					<li class="menu-item m-level-1">
-      						<a href="/" class="">
-      							<h4>Home</h4>
-      						</a>
-      			        </li>
-      					<li class="menu-item m-level-1">
-      						<a href="/about" class="">
-      							<h4>About</h4>
-      						</a>
-      			        </li>
-      					<li class="menu-item m-level-1">
-      						<a href="/work" class="">
-      							<h4>Work</h4>
-      						</a>
-      			        </li>
-      					<li class="menu-item m-level-1">
-      						<a href="/contact" class="">
-      							<h4>Contact</h4>
-      						</a>
-      			        </li>
-      			</ul>
-      		</div>
-      	</div>
-      </div>
+<body class="">
+  <div class="nav" v-bind:class="{'active': menuOpen}">
+  	<a class="logo-link" href="/">
+  		<div class="logo">
+  			tk
+  		</div>
+  	</a>
+  	<div class="menu">
+  		<div class="menu-button" v-on:click="menuOpen = !menuOpen">
+  			<div class="bar"></div>
+  			<div class="bar"></div>
+  		</div>
+  	</div>
+  	<div class="menu-overlay" v-bind:class="{'active': menuOpen}">
+  		<div class="menu-wrapper">
+  			<ul>
+  					<li class="menu-item m-level-1">
+  						<a href="/" class="">
+  							<h4>Home</h4>
+  						</a>
+  			        </li>
+  					<li class="menu-item m-level-1">
+  						<a href="/about" class="">
+  							<h4>About</h4>
+  						</a>
+  			        </li>
+  					<li class="menu-item m-level-1">
+  						<a href="/work" class="">
+  							<h4>Work</h4>
+  						</a>
+  			        </li>
+  					<li class="menu-item m-level-1">
+  						<a href="/contact" class="">
+  							<h4>Contact</h4>
+  						</a>
+  			        </li>
+  			</ul>
+  		</div>
+  	</div>
+  </div>
+    <main>
+    <div class="main">
         <div class="main-header">
-            </div>
-            <div class="header-text">
+            <div class="header-text row">
                 <h1>Contact</h1>
             </div>
         </div>
         <div class="main-content">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                    </div>
-                </div>
+                <ul>
+                    <li><h3>tkung12@gmail.com</h3></li>
+                    <li><a href="https://github.com/tylerkung" target="_blank"><h3>GitHub</h3></a></li>
+                    <li><a href="https://www.linkedin.com/in/tyler-kung" target="_blank"><h3>LinkedIn</h3></a></li>
+                    <li><a href="https://dribbble.com/tylerkung" target="_blank"><h3>Dribbble</h3></a></li>
+                    <li><a href="https://twitter.com/tylerkung" target="_blank"><h3>Twitter</h3></a></li>
+                    <li><a href="https://medium.com/@tylerkung" target="_blank"><h3>Medium</h3></a></li>
+                </ul>
             </div>
         </div>
-  </body>
+    </div>
+    </main>
+    <script src="/scripts/all.js"></script>
+</body>
 </html>

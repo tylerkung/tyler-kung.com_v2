@@ -30,6 +30,10 @@ h5.rotated{
       font-size: 0.8em;
       padding-bottom: 5px;
     }
+    @media (max-width: 767px){
+        font-size: 1.6em;
+        font-weight: bold;
+    }
 }
 .reader{
     font-family: "Arapey";

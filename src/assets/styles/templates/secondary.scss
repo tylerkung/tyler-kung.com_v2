@@ -2,6 +2,9 @@
     .main-header{
         padding-bottom: 300px;
         margin-bottom: 400px;
+        @media (max-width: 767px){
+            margin-bottom: 300px;
+        }
     }
     .container{
         @media (min-width: 1200px){
