@@ -1,8 +1,75 @@
+.loading-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: #282828;
+    display: flex;
+    animation: loadOverlay 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 4s;
+    pointer-events: none;
+    .load-logo{
+        color: #f6f7fa;
+        font-family: "Kanit";
+        font-size: 3rem;
+        padding: 1rem;
+        line-height: 1;
+        position: absolute;
+        width: 8.333%;
+        text-align: center;
+        left: calc(50% - 60px);
+        top: calc(50% - 60px);
+        animation: loadLogo 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        animation-delay: 1s;
+        opacity: 0;
+        transform: scale(3);
+    }
+}
+@keyframes loadLogo{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    70%{
+        left: calc(50% - 60px);
+        top: calc(50% - 60px);
+        transform: scale(3);
+    }
+    100%{
+        left: 0;
+        top: 0;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes loadOverlay{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes loadMain{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 .home-template.main .main-area{
     display: grid;
     grid-template-columns: 50px auto auto auto 50px;
     grid-template-rows: repeat(5, minmax(200px, 20vh));
     grid-row-gap: 20px;
+    opacity: 0;
+    animation: loadMain 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
     @media (min-width: 768px){
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(6, 1fr);
@@ -217,11 +284,6 @@
         line-height: 1;
         margin-top: 5rem;
     }
-    .sidebar-area{
-        @media (max-width: 767px){
-            padding-left: 50px !important;
-        }
-    }
 }
 .content{
     background-color: #f9f9f9;
@@ -236,7 +298,13 @@
         padding: 0;
     }
 }
+.sidebar-area{
+    @media (max-width: 767px){
+        padding-left: 50px !important;
+    }
+}
 .content-area{
+    margin-bottom: 5em;
     @media (min-width: 1200px){
         max-width: 1300px;
     }

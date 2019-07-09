@@ -77,6 +77,9 @@
     		</div>
     	</div>
     </div>
+    <div class="loading-overlay">
+        <div class="load-logo">tk</div>
+    </div>
     <main>
         <div class="main home-template">
             <div class="main-area">
@@ -126,10 +129,10 @@
         </div>
         <div class="content">
             <div class="row">
-                <div class="col-md-3 col-sm-2 sidebar-area">
+                <div class="col-md-3 sidebar-area">
                     <h5 class="rotated">Recent Projects</h5>
                 </div>
-                <div class="col-md-9 col-sm-10 content-area">
+                <div class="col-md-9 content-area">
                     <div class="list">
                         <div v-for="(item, index) in gallery" class="list-item" :class="{'half-item': featured && index > 1}">
                             <div class="l-item-img">
@@ -144,7 +147,7 @@
                             </div>
                             <div class="l-item-content">
                                 <div class="l-item-col">
-                                    <h2>${item['title']}</h2>
+                                    <a :href="item['link']" class="item-title"><h2>${item['title']}</h2></a>
                                     <h3>${item['headline']}</h3>
                                     <div class="tags-container" v-if="item['tags']">
                                         <div class="tags">
@@ -202,6 +205,8 @@
                         }
                     })
                     </script>
+                    <a href="/work" class="btn btn-primary" alt="Projects">View All Projects</a>
+                    <a href="/contact" class="btn btn-secondary" alt="Contact">Get in touch</a>
                 </div>
             </div>
         </div>

@@ -99,7 +99,7 @@
                         </div>
                         <div class="l-item-content">
                             <div class="l-item-col">
-                                <h2>${item['title']}</h2>
+                                <a :href="item['link']" class="item-title"><h2>${item['title']}</h2></a>
                                 <h3>${item['headline']}</h3>
                                 <div class="tags-container" v-if="item['tags']">
                                     <div class="tags">

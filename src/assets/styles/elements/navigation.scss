@@ -74,6 +74,7 @@
         height: 100vh;
         opacity: 0;
         transform: translateY(0%);
+        transition: transform 1s 0.1s ease, opacity 1s cubic-bezier(0.19, 1, 0.22, 1);
         transition-duration: 0.5s;
         pointer-events: none;
     }
@@ -82,6 +83,7 @@
         @media (max-width: 767px){
             opacity: 1;
             pointer-events: all;
+            visibility: visible;
         }
         .menu-wrapper{
             ul{

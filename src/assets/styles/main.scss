@@ -17,6 +17,18 @@ body {
   overflow-x: hidden;
   width: 100%;
   padding-bottom: 4em;
+  &:after{
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      content: '';
+      background-image: url('http://momotaro.design/assets/img/noise.gif');
+      opacity: .04;
+      z-index: 9999;
+      pointer-events: none;
+  }
 }
 section{
     padding-top: 2em;
@@ -60,7 +72,11 @@ section{
     .nav{
         .menu{
             .bar{
-                background-color: #fff;
+            }
+            &.dark{
+                .bar{
+                    background-color: #fff;
+                }
             }
         }
     }

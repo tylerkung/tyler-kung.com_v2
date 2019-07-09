@@ -9,6 +9,9 @@
     &:hover{
         text-decoration: none;
     }
+    + .btn{
+        margin-left: 5px;
+    }
 }
 .btn-primary, .btn-default{
     background-color: #a1a8c7;
