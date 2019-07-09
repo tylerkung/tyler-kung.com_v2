@@ -31,6 +31,20 @@
         opacity: 0;
         font-size: 192px;
     }
+    &:before{
+        content: 'tylerkung tylerkung tylerkung tylerkung tylerkung tylerkung';
+        font-family: "Kanit";
+        font-weight: 800;
+        font-style: italic;
+        font-size: 30em;
+        transform: translateX(-25%);
+        line-height: 0.6;
+        opacity: 0.16;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     &:after{
         position: fixed;
         top: 0;

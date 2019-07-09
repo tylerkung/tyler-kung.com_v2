@@ -30,6 +30,9 @@
     .menu{
         width: 8.3333%;
         z-index: 9;
+        @media (max-width: 767px){
+            width: unset;
+        }
         .menu-button{
             display: flex;
             height: 100%;
@@ -38,6 +41,10 @@
             justify-content: center;
             padding: 1.7rem;
             cursor: pointer;
+            @media (max-width: 767px){
+                padding: 0;
+                padding-right: 15px;
+            }
         }
         .bar{
             width: 45px;
