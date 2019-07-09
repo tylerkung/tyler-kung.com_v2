@@ -6,6 +6,11 @@
         margin-left: 8.333%;
         padding-left: 15px;
         padding-right: 15px;
+        @media (max-width: 767px){
+            h2{
+                font-size: 1.8em;
+            }
+        }
     }
     .header-image-container{
 

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" />
+  <head>
+      <meta charset='utf-8'>
+  	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" />
+      <meta data-react-helmet="true" name="description" content="">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="tyler-kung.com | Tyler Kung">
+      <meta property="og:image" content="">
+      <meta property="og:url" content="">
+      <meta name="description" content="I build websites. Always striving to push boundaries and create unique digital experiences by pulling inspiration from the old and the new." />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<title>tyler-kung.com | Tyler Kung</title>
+  	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  	<!-- <link rel="stylesheet" type="text/css" href="/styles/all.css" /> -->
+  	
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+  	
+  	<link rel="stylesheet" href="/includes/bootstrap.css">
+  	<link rel="stylesheet" type="text/css" href="/styles/all.css">
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+  	
+  	<script src="/includes/jquery-3.4.1.min.js"></script>
+  	<script src="/includes/parallax.min.js"></script>
+  	<script src="/includes/vue.js"></script>
+  	<script src="/includes/bootstrap.min.js"></script>
+  	<script src="/includes/scrollmagic.min.js"></script>
+  	<script src="/includes/debug.addIndicators.min.js"></script>
+  	<!-- <script src="/includes/parallaxy.min.js"></script> -->
+  	<!-- <script src="/includes/turbolinks.js"></script> -->
+  	<script src="/includes/swup.js"></script>
+  	<!-- <script src="https://unpkg.com/swup@latest/dist/swup.js"></script> -->
+  	<link href="https://fonts.googleapis.com/css?family=Kanit:800i,900i|Raleway:300,300i,400,400i,600,800|Arapey&display=swap" rel="stylesheet">
+  	
+  	<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+  </head>
+<body class="">
+  <div class="nav" v-bind:class="{'active': menuOpen}">
+  	<a class="logo-link" href="/">
+  		<div class="logo">
+  			tk
+  		</div>
+  	</a>
+  	<div class="menu">
+  		<div class="menu-button" v-on:click="menuOpen = !menuOpen">
+  			<div class="bar"></div>
+  			<div class="bar"></div>
+  		</div>
+  	</div>
+  	<div class="menu-overlay" v-bind:class="{'active': menuOpen}">
+  		<div class="menu-wrapper">
+  			<ul>
+  					<li class="menu-item m-level-1">
+  						<a href="/" class="">
+  							<h4>Home</h4>
+  						</a>
+  			        </li>
+  					<li class="menu-item m-level-1">
+  						<a href="/about" class="">
+  							<h4>About</h4>
+  						</a>
+  			        </li>
+  					<li class="menu-item m-level-1">
+  						<a href="/work" class="">
+  							<h4>Work</h4>
+  						</a>
+  			        </li>
+  					<li class="menu-item m-level-1">
+  						<a href="/contact" class="">
+  							<h4>Contact</h4>
+  						</a>
+  			        </li>
+  			</ul>
+  		</div>
+  	</div>
+  </div>
+    <main>
+    <div class="main work-template">
+        <div class="main-header">
+            <div class="header-text row">
+                <h1>Tyler Kung</h1>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="work-intro container">
+                <img src="/img/tk-og-image.png">
+            </div>
+            <div class="container">
+                <section>
+                <div class="row">
+                    <div class="col-lg-3 offset-lg-0 col-md-6 offset-md-3 section-header">
+                        <img src="/img/ac-icon-shadow.png">
+                    </div>
+                    <div class="col-lg-7 offset-lg-1">
+                        <p class="reader lead">
+                            I helped local San Francisco based pet store, <a href="https://www.animalconnectionsf.net/">The Animal Connection</a>, to create a design that they can use for stickers or as a branding logo.
+                        </p>
+                        <p class="reader">
+                            Earlier this year, I designed a sticker for a local dog event, Dogs and Die, where I got into contact with the owner of The Animal Connection, who was impressed with my design and asked if I could whip something up for their store. I approached that design somewhat casually, and felt I had creative freedom, since I did it willingly on my own time. But with The Animal Connection, I knew I wanted to approach it with a plan of attack.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="bg-grey">
+            <div class="container">
+            <section>
+                <div class="row">
+                    <div class="col-lg-3 section-header">
+                        <h2>Word Association</h2>
+                    </div>
+                    <div class="col-lg-7 offset-lg-1">
+                        <p class="reader">
+                            I wanted to create something that would embody the brand and could capture the essence of The Animal Connection. To do so, I did a quick brainstorming exercise to see what I could come up with.
+                        </p>
+                        <p><img src="/img/ac-words.jpg"></p>
+                        <p class="reader">
+                            The Animal Connection prides themselves on being the largest, independent pet store in San Francisco, so I came up with words like "personal", "unique", and "success", and things like the "Golden Gate Bridge" to represent San Francisco. "Pets" could be associated with "animals", "companions", or  "friends." Then I realized, the best idea was to simply showcase pets, and I chose my top 3 picks: dogs, cats, and birds.
+                        </p>
+                        <p class="reader">
+                            Still, I wanted to incorporate the idea of being personable and providing a service that's unique to the store that you can't find anywhere else in the city. I liked the idea of a circle sticker, representing a well-rounded, encapsulating brand. The Animal Connection also wanted a retro feel, also going back to the idea of being a personal brand.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+        <div class="container">
+            <section>
+                <div class="row">
+                    <div class="col-lg-3 section-header">
+                        <h2>Research</h2>
+                    </div>
+                    <div class="col-lg-7 offset-lg-1">
+                        <p><img src="/img/ac-inspiration.jpg"></p>
+                        <p class="reader">
+                            I browsed Dribbble for some pet and retro designs for some inspiration and simply picked what I liked. I think what I collected gave me a good point of reference to begin the next step and start sketching.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="bg-grey">
+            <div class="container">
+            <section>
+                <div class="row">
+                    <div class="col-lg-3 section-header">
+                        <h2>Sketching</h2>
+                    </div>
+                    <div class="col-lg-7 offset-lg-1">
+                        <p><img src="/img/ac-sketch.jpg">
+                        </p>
+                        <p class="reader">
+                            This part was fun, something I don't get to do everyday. Tried many different things, but eventually asked myself, "what's the simplest way I can draw a cat?" I liked how it looked and tried to do the dog and liked that one too.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+        <div class="container">
+        <section>
+            <div class="row">
+                <div class="col-lg-3 section-header">
+                    <h2>Digital Illustration</h2>
+                </div>
+                <div class="col-lg-7 offset-lg-1">
+                    <p><img src="/img/ac-process.jpg">
+                    </p>
+                    <p class="reader">
+                        After tracing my cat and dog with Illustrator, I added a bird and wrapped everything in a circle. I used the Google font, Karla for the text. I remember the owner of The Animal Connection mentioning an affinity for space and astronauts so I figured painting a starry night would be a good way to fill the empty space above the pets. I used the same green in the current logo to give the entire sticker some color, and used white to accent the details.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        </div>
+    </div>
+    </main>
+    <script src="/scripts/all.js"></script>
+</body>
+</html>
