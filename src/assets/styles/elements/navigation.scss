@@ -19,11 +19,13 @@
     .logo{
         font-family: "Kanit";
         color: #030209;
-        font-size: 3rem;
+        font-size: 3em;
         padding: 1rem;
         line-height: 1;
         text-align: center;
         transition: color 0.2s ease;
+        font-weight: 800;
+        font-style: italic;
     }
     .menu{
         width: 8.3333%;
