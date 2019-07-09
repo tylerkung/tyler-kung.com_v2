@@ -54,7 +54,7 @@ section{
     }
 }
 .reader-container{
-    .row{
+    .row:not(:last-of-type){
         margin-bottom: 3em;
     }
 }

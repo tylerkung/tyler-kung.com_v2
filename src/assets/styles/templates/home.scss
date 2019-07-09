@@ -8,7 +8,7 @@
     background-color: #282828;
     display: flex;
     animation: loadOverlay 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-    animation-delay: 4s;
+    animation-delay: 3.5s;
     pointer-events: none;
     .load-logo{
         color: #f6f7fa;
@@ -21,7 +21,7 @@
         text-align: center;
         left: calc(50% - 60px);
         top: calc(50% - 60px);
-        animation: loadLogo 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        animation: loadLogo 2.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
         animation-delay: 1s;
         opacity: 0;
         transform: scale(3);
@@ -31,7 +31,7 @@
     0%{
         opacity: 0;
     }
-    30%{
+    20%{
         opacity: 1;
     }
     70%{

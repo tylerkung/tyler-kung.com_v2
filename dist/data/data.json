@@ -1,17 +1,9 @@
 {
 	"home": {
 		"meta-title": "Tyler Kung",
-		"meta-description": "Hi! I build websites.",
-		"meta-image": "/img/friends-og-image.jpg"
+		"meta-description": "I build websites. Always striving to push boundaries and create unique digital experiences by pulling inspiration from the old and the new.",
+		"meta-image": "/img/tk-og-image.png"
 	},
-	"about": {
-		"meta-title": "about page",
-		"meta-description": "description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi qui cum vitae suscipit voluptatem, alias ea facilis quae magnam ut rerum dolorum. Sint deserunt esse, debitis blanditiis modi ipsam laudantium?",
-		"title": "1-title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptate nulla mollitia quis, aspernatur eum neque, quasi! Omnis corporis modi quia, obcaecati, aut atque! Odio facilis quisquam maxime tempore iure!"
-	},
-   "brand":{
-	   	"logo": ""
-   },
    "navigation":[
       {
 		  "title":"Home",
