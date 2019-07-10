@@ -86,7 +86,7 @@
         <div class="main-content">
             <div class="container">
                 <div class="list">
-                    <div v-for="(item, index) in gallery" class="list-item" :class="{'half-item': featured && index > 1}">
+                    <div v-for="(item, index) in gallery" class="list-item" :class="{'half-item': featured && index > 2}">
                         <div class="l-item-img">
                             <a :href="item['link']">
                                 <div v-if="!parallaxOff" class="parallax" data-parallax="scroll" :data-image-src="item['image-1']" data-speed="0.9" data-natural-height="500" data-position="center">
@@ -107,7 +107,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="l-item-col" v-if="index < 2 && featured || !featured">
+                            <div class="l-item-col" v-if="index < 3 && featured || !featured">
                                 <div class="description">
                                     <p class="description-content">${item['description']}</p>
                                     <div class="cta">
@@ -145,7 +145,7 @@
                         },
                         gallery: function(){
                             if (this.featured){
-                                return data.data.slice(0, 4);
+                                return data.data.slice(0, 5);
                             } else{
                                 return data.data;
                             }

@@ -13,6 +13,18 @@ export default{
               "github": 'https://github.com/tylerkung/friends'
     	  },
           {
+    		  "title": "2019 Portfolio",
+    		  "image-1": "/img/tk-og-image.png",
+    		  "image-2": "",
+              "headline": "My portfolio 2.0",
+              "description": " My goal here was to prioritize my projects and elevate my personal brand. I wanted a space that I could easily extend and build on.",
+              "tags": "SCSS, Handlebars, VueJS, Gulp, Design",
+              "date": "2019",
+    		  "link": "/work/tylerkung",
+              "link-name": "View Case Study",
+              "github": 'https://github.com/tylerkung/tyler-kung.com_v2'
+    	  },
+          {
      		  "title": "The Animal Connection",
      		  "image-1": "/img/ac.jpg",
      		  "image-2": "",
