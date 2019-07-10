@@ -37,7 +37,9 @@
         font-weight: 800;
         font-style: italic;
         font-size: 30em;
-        transform: translateX(-25%);
+        // transform: translateX(-25%);
+        width: 100%;
+        text-align: center;
         line-height: 0.6;
         opacity: 0.16;
         top: 0;
@@ -340,6 +342,12 @@
     margin-bottom: 5em;
     @media (min-width: 1200px){
         max-width: 1300px;
+    }
+    .button-group{
+        @media (max-width: 767px){
+            padding-left: 3em;
+            padding-right: 3em;
+        }
     }
 }
 

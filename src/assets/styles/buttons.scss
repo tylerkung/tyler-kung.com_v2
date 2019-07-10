@@ -10,7 +10,9 @@
         text-decoration: none;
     }
     + .btn{
-        margin-left: 5px;
+        @media (min-width: 768px){
+            margin-left: 5px;
+        }
     }
 }
 .btn-primary, .btn-default{
