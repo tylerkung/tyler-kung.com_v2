@@ -30,6 +30,7 @@
         -webkit-animation-delay: 1s;
         opacity: 0;
         font-size: 192px;
+        // z-index: 99999999;
     }
     &:before{
         content: 'tylerkung tylerkung tylerkung tylerkung tylerkung tylerkung';

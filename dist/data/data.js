@@ -36,6 +36,17 @@ export default{
                "link-name": "View Case Study"
      	  },
           {
+      		  "title": "Why Accessibility Matters",
+      		  "image-1": "https://www.hdmz.com/application/files/thumbnails/blog_thumbnail_featured/8315/6175/9727/pablo-page-is-under-construction.png",
+      		  "image-2": "",
+                "headline": "Written by Tyler Kung & Luis Augusto",
+      		  "description": "Web accessibility is about creating websites, tools, and technologies that are usable by all people, regardless of any disabilities. See how HDMZ optimizes our client sites for web accessibility.",
+                "tags": "User Experience, Web Accessibility, Website Optimization",
+                "date": "2019",
+      		  "link": "https://www.hdmz.com/blog/why-does-web-accessibility-matter",
+                "link-name": "Read Article"
+      	  },
+          {
      		  "title": "Basketball Monster",
      		  "image-1": "/img/basketballmonster.jpg",
      		  "image-2": "",
